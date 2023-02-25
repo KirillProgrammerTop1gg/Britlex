@@ -1,0 +1,24 @@
+.hero-section{
+    &__img{
+        width: 299px;
+        height: 299px;
+        @include flex(center,center);
+    }
+    &__title{
+        margin-top: 16px;
+        @include text-style('Poppins',600,24px,1.5,$title-color,center);
+    }
+    &__text{
+        margin-top: 20px;
+        @include text-style('Poppins',400,12px,1.75,$text-color,center);
+    }
+    &__but{
+        margin-top: 35px;
+        @include text-style('Poppins',500,16px,1.5,$but-color,center);
+        border: 0;
+        width: 290px;
+        height: 60px;
+        background: $bg-but-color;
+        border-radius: 5px;
+    }
+}

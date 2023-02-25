@@ -1,0 +1,9 @@
+.header-section{
+    padding: 36px 15px 29px;
+    @include flex(space-between, center);
+    &__img{
+        display: block;
+        width: 33.53px;
+        height: 19px;
+    }
+}

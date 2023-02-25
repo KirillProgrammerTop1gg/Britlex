@@ -1,0 +1,48 @@
+.pricing-section{
+    padding-bottom: 72px;
+    &__title{
+        @include text-style('Poppins',600,24px,1.5,$title-color,center);
+    }
+    &__item>svg{
+        display: block;
+        margin: 0 auto;
+        fill: $bg-svg-color;
+    }
+    &__img--study{
+        width: 248px;
+        height: 248px;
+    }
+    &__img--live{
+        width: 257px;
+        height: 197px;
+    }
+    &__img--person{
+        width: 241px;
+        height: 241px;
+    }
+    &__name{
+        margin-top: 28px;
+        @include text-style('Poppins',600,18px,1.5,$subtitle-color,center);
+    }
+    &__description{
+        margin-top: 17px;
+        @include text-style('Poppins',400,13px,1.5,$text-color,center);
+    }
+    &__buy{
+        width: 170px;
+        height: 37px;
+        background: $pricing-but-color;
+        border: 0;
+        border-radius: 5px;
+        display: block;
+        margin: 33px auto 0;
+        padding: 8px 15px;
+        @include flex(space-between,center);
+    }
+    &__price{
+        @include text-style('Poppins',400,18px,1.5,$subtitle-color,center);
+    }
+    &__date{
+        @include text-style('Poppins',400,14px,1.5,$date-color,center);
+    }
+}

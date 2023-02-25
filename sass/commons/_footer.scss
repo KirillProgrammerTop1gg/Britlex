@@ -1,0 +1,10 @@
+.footer-section{
+    width: 290px;
+    margin: 0 auto;
+    padding: 26px 0 46px;
+    border-top: 1.5px solid $border-color;
+    &__text{
+        @include text-style('Poppins',400,11px,1.5,$text-color,center);
+        margin-top: 15px;
+    }
+}

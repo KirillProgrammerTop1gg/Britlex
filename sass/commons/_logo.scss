@@ -1,0 +1,9 @@
+.logo{
+    @include text-style('Poppins',400,24px,1.5,$title-color);
+    &__span{
+        @include text-style('Poppins',400,24px,1.5,$logo-color);
+    }
+    &--footer{
+        text-align: center;
+    }
+}

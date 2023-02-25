@@ -1,0 +1,54 @@
+.skills-section{
+    padding: 50px 0;
+    &__title{
+        @include text-style('Poppins',600,24px,3.3,$title-color,center);
+    }
+    &__list{
+        @include flex(space-between,center,wrap);
+        gap:20px;
+    }
+    &__item{
+        padding: 10px 15px 45px;
+        width: 290px;
+        background: $bg-card-color;
+        border-radius: 5px;
+        &>svg{
+            display: block;
+            margin: 0 auto;
+            fill: $bg-svg-color;
+        }
+    }
+    &__img--speak{
+        width: 213px;
+        height: 213px;
+    }
+    &__img--write{
+        width: 204px;
+        height: 204px;
+    }
+    &__img--read{
+        width: 236px;
+        height: 157px;
+    }
+    &__img--listen{
+        width: 232px;
+        height: 154px;
+    }
+    &__subtitle{
+        margin-top: 40px;
+        @include text-style('Poppins',600,18px,1.5,$subtitle-color);
+    }
+    &__text{
+        margin-top: 10px;
+        @include text-style('Poppins',400,13px,1.5,$text-color);
+    }
+    &__but{
+        margin-top: 30px;
+        background-color: $bg-but-color;
+        width: 178px;
+        height: 50px;
+        border: 0;
+        border-radius: 5px;
+        @include text-style('Poppins',500,14px,1.5,$but-color,center);
+    }
+}

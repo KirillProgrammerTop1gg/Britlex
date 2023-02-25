@@ -1,0 +1,25 @@
+.aboutUs-section{
+    padding-bottom: 84px;
+    &__title{
+        @include text-style('Poppins',600,24px,3.3,$title-color,center);
+    }
+    &__img{
+        margin-top: 24px;
+    }
+    &__descr{
+        margin-top: 24px;
+        @include text-style('Poppins',400,13px,1.5,$text-color,center);
+    }
+    &__list{
+        @include flex(center,center);
+        flex-direction: column;
+        gap:40px;
+        margin-top: 30px;
+    }
+    &__num{
+        @include text-style('Poppins',600,24px,1.5,$about-color,center);
+    }
+    &__text{
+        @include text-style('Poppins',400,15px,1.5,$text-color,center);
+    }
+}
