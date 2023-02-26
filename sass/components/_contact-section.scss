@@ -1,16 +1,39 @@
 .contacts-section{
     padding-bottom: 57px;
+    @media screen and (min-width:575px){
+        padding-bottom: 144px;
+    }
     &__title{
         @include text-style('Poppins',600,24px,1.5,$title-color,center);
+        @media screen and (min-width:575px){
+            @include text-style('Poppins',600,30px,2.7,$title-color,center);
+        }
     }
     &__img{
         width: 253px;
         height: 228px;
-        margin-top: 38px;
+        margin: 38px auto 0;
+        display: block;
+        @media screen and (min-width:575px){
+            width: 358px;
+            height: 322px;
+            margin-top: 83px;
+        }
     }
     &__text{
         margin-top: 38px;
         @include text-style('Poppins',400,14px,1.5,$text-color,center);
+        @media screen and (min-width:575px){
+            margin-top: 34px;
+            font-size: 16px;
+        }
+    }
+    &__form{
+        @media screen and (min-width:575px){
+            @include flex(center,center);
+            margin-top: 60px;
+            position: relative;
+        }
     }
     &__input{
         margin-top: 31px;
@@ -20,6 +43,12 @@
         border-radius: 5px;
         padding: 16px 26px;
         @include text-style('Poppins',400,12px,1.5,$text-color);
+        @media screen and (min-width:575px){
+            width: 511px;
+            height: 60px;
+            margin-top: 0;
+            font-size: 13px;
+        }
     }
     &__but{
         margin-top: 17px;
@@ -29,5 +58,12 @@
         border: 0;
         border-radius: 5px;
         @include text-style('Poppins',500,14px,1.5,$but-color,center);
+        @media screen and (min-width:575px){
+            margin-top: 0;
+            font-size: 16px;
+            width: 193px;
+            position: absolute;
+            right: 0;
+        }
     }
 }

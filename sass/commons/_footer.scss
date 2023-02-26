@@ -3,8 +3,17 @@
     margin: 0 auto;
     padding: 26px 0 46px;
     border-top: 1.5px solid $border-color;
+    @media screen and (min-width:575px){
+        width: 511px;
+        @include flex(space-between,center);
+        padding: 25px 0;
+    }
     &__text{
         @include text-style('Poppins',400,11px,1.5,$text-color,center);
         margin-top: 15px;
+        @media screen and (min-width:575px){
+            margin-top: 0;
+            font-size: 12px;
+        }
     }
 }
