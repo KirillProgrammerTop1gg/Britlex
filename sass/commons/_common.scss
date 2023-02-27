@@ -2,6 +2,9 @@
     width: 290px;
     margin: 0 auto;
     @media screen and (min-width:575px){
-     width: 511px;   
+        width: 511px;   
+    }
+    @media screen and (min-width:767px){
+        width: 690px;   
     }
 }

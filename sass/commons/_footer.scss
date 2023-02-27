@@ -8,12 +8,19 @@
         @include flex(space-between,center);
         padding: 25px 0;
     }
+    @media screen and (min-width:767px){
+        padding: 18px 0 15px;
+        width: 690px;
+    }
     &__text{
         @include text-style('Poppins',400,11px,1.5,$text-color,center);
         margin-top: 15px;
         @media screen and (min-width:575px){
             margin-top: 0;
             font-size: 12px;
+        }
+        @media screen and (min-width:767px){
+            font-size: 13px;
         }
     }
 }
