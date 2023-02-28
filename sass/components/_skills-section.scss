@@ -22,13 +22,20 @@
         margin-top: 32px;
         gap:20px;
         @media screen and (min-width:575px){
+            position: relative;
             margin-top: 34px;
-            gap: 30px
+            gap: 30px;
+            &>li{
+                position: absolute;
+                top: 0;
+            }
         }
         @media screen and (min-width:767px){
             @include flex(space-between,flex-start,nowrap);
             padding-top: 31px;
+            position: static;
             &>li{
+                position: static;
                 width: 224px;
                 height: 662px;
             }
@@ -37,8 +44,15 @@
         @include flex(space-between,center,wrap);
     }
     &__container{
+        @include flex(space-between,center,wrap);
+        gap: 20px;
+        @media screen and (min-width:575px){
+            &>li:nth-child(1){
+                margin-left: 271px;
+            }
+        }
         @media screen and (min-width:767px){
-            @include flex(center,center,wrap);
+            justify-content: center;
             gap: 10px;
             &>li:nth-child(1){
                 padding-top: 14px;
@@ -55,6 +69,7 @@
                 width: 462px;
                 height: 210px;
                 position: relative;
+                margin-left: 0;
                 &>p{
                     margin-top: 5px;
                     width: 331px;
