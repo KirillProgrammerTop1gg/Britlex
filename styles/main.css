@@ -356,6 +356,7 @@
     padding-top: 14px;
     width: 227px;
     height: 441px;
+    margin-left: 0;
   }
   .skills-section__container > li:nth-child(2) {
     padding-top: 34px;
@@ -367,7 +368,6 @@
     width: 462px;
     height: 210px;
     position: relative;
-    margin-left: 0;
   }
   .skills-section__container > li:nth-child(3) > p {
     margin-top: 5px;
