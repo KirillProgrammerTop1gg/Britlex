@@ -2,8 +2,14 @@
     @include text-style('Poppins',400,24px,1.5,$title-color);
     &__span{
         @include text-style('Poppins',400,24px,1.5,$logo-color);
+        @media screen and (min-width: 992px){
+            font-size: 30px;
+        }
     }
     &--footer{
         text-align: center;
+    }
+    @media screen and (min-width: 992px){
+        font-size: 30px;
     }
 }

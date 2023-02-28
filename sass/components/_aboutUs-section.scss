@@ -6,6 +6,9 @@
     @media screen and (min-width:767px){
         padding-bottom: 88px;
     }
+    @media screen and (min-width: 992px){
+        padding-bottom: 101px;
+    }
     &>.container{
         position: relative;
     }
@@ -16,6 +19,9 @@
         }
         @media screen and (min-width:767px){
             text-align: left;
+        }
+        @media screen and (min-width: 992px){
+            @include text-style('Poppins',600,36px,2.2,$title-color,left);
         }
     }
     &__img{
@@ -36,6 +42,11 @@
             margin-top: 0;
             top: 50px; 
         }
+        @media screen and (min-width: 992px){
+            width: 336px;
+            height: 336px;
+            top: 40px;
+        }
     }
     &__descr{
         margin-top: 24px;
@@ -49,6 +60,10 @@
             width: 321px;
             margin-top: 0;
             font-size: 14px;
+        }
+        @media screen and (min-width: 992px){
+            width: 540px;
+            font-size: 16px;
         }
     }
     &__list{
@@ -65,6 +80,9 @@
         @media screen and (min-width:767px){
             width: 321px;
         }
+        @media screen and (min-width: 992px){
+            width: 400px;
+        }
     }
     &__item{
         @media screen and (min-width:575px){
@@ -79,6 +97,9 @@
         @media screen and (min-width:767px){
             font-size: 22px;
         }
+        @media screen and (min-width: 992px){
+            font-size: 30px;
+        }
     }
     &__text{
         @include text-style('Poppins',400,15px,1.5,$text-color,center);
@@ -87,6 +108,9 @@
         }
         @media screen and (min-width:767px){
             font-size: 13px;
+        }
+        @media screen and (min-width: 992px){
+            font-size: 16px;
         }
     }
 }

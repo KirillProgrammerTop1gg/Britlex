@@ -1,6 +1,10 @@
 .header-section{
     padding: 36px 15px 29px;
     @include flex(space-between, center);
+    @media screen and (min-width: 992px){
+        justify-content: flex-start;
+        padding: 30px 0 68px;
+    }
     &__img{
         display: block;
         width: 33.53px;
@@ -12,6 +16,38 @@
         @media screen and (min-width:767px){
             width: 30px;
             height: 17px;
+        }
+        @media screen and (min-width: 992px){
+            display: none;
+        }
+    }
+    &__list{
+        width: 350px;
+        margin-left: 167px;
+        display: none;
+        @media screen and (min-width: 992px){
+            @include flex(space-between, center);
+        }
+    }
+    &__link{
+        @include text-style('Poppins',500,16px,1.5,$subtitle-color);
+        text-decoration: none;
+        display: none;
+        @media screen and (min-width: 992px){
+            display: block;
+        }
+    }
+    &__but{
+        @include text-style('Poppins',400,18px,1.5,$title-color);
+        width: 160px;
+        height: 50px;
+        border: 2px solid $subtitle-color;
+        background-color: transparent;
+        border-radius: 5px;
+        display: none;
+        margin-left: auto;
+        @media screen and (min-width: 992px){
+            @include flex(center,center);
         }
     }
 }

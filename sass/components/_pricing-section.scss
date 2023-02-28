@@ -1,15 +1,21 @@
 .pricing-section{
     padding-bottom: 72px;
     @media screen and (min-width:575px){
-            padding-bottom: 163px;
+        padding-bottom: 163px;
     }
     @media screen and (min-width:767px){
         padding-bottom: 65px;
+    }
+    @media screen and (min-width: 992px){
+        padding-bottom: 140px;
     }
     &__title{
         @include text-style('Poppins',600,24px,1.5,$title-color,center);
         @media screen and (min-width:575px){
             @include text-style('Poppins',600,30px,2.7,$title-color,center);
+        }
+        @media screen and (min-width: 992px){
+            @include text-style('Poppins',600,36px,2.2,$title-color,center);
         }
     }
     &__list{
@@ -38,6 +44,16 @@
                 margin-top: 47px;
             }
         }
+        @media screen and (min-width: 992px){
+            width: 270px;
+            height: 500px;
+            &:nth-child(2)>p{
+                margin-top: 40px;
+            }
+            &:nth-child(3)>p{
+                margin-top: 30px;
+            }
+        }
         &>svg{
             display: block;
             margin: 0 auto;
@@ -55,6 +71,10 @@
             width: 197px;
             height: 197px;
         }
+        @media screen and (min-width: 992px){
+            width: 222px;
+            height: 222px;
+        }
     }
     &__img--live{
         width: 257px;
@@ -66,6 +86,10 @@
         @media screen and (min-width:767px){
             width: 219px;
             height: 168px;
+        }
+        @media screen and (min-width: 992px){
+            width: 267px;
+            height: 195px;
         }
     }
     &__img--person{
@@ -79,6 +103,10 @@
             width: 210px;
             height: 210px;
         }
+        @media screen and (min-width: 992px){
+            width: 242px;
+            height: 242px;
+        }
     }
     &__name{
         margin-top: 28px;
@@ -87,6 +115,10 @@
             font-size: 24px;
             line-height: 1.2;
         }
+        @media screen and (min-width: 992px){
+            font-size: 22px;
+            text-align: left;
+        }
     }
     &__description{
         margin-top: 17px;
@@ -94,6 +126,10 @@
         @media screen and (min-width:575px){
             font-size: 14px;
             margin-top: 20px;
+        }
+        @media screen and (min-width: 992px){
+            font-size: 16px;
+            text-align: left;
         }
     }
     &__buy{
@@ -121,6 +157,9 @@
         @include text-style('Poppins',400,18px,1.5,$subtitle-color,center);
         @media screen and (min-width:575px){
             font-size: 22px;
+        }
+        @media screen and (min-width: 992px){
+            font-size: 24px;
         }
     }
     &__date{

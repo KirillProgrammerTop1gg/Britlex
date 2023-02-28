@@ -12,6 +12,10 @@
         padding: 18px 0 15px;
         width: 690px;
     }
+    @media screen and (min-width: 992px){
+        width: 930px;
+        padding: 22px 0 24px;
+    }
     &__text{
         @include text-style('Poppins',400,11px,1.5,$text-color,center);
         margin-top: 15px;
@@ -21,6 +25,9 @@
         }
         @media screen and (min-width:767px){
             font-size: 13px;
+        }
+        @media screen and (min-width: 992px){
+            font-size: 16px;
         }
     }
 }
