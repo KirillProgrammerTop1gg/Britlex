@@ -17,6 +17,9 @@
         @media screen and (min-width: 992px){
             width: 934px;
         }
+        @media screen and (min-width: 1200px){
+            width: 1140px;
+        }
     }
     &__title{
         @include text-style('Poppins',600,24px,3.3,$title-color,center);
@@ -45,10 +48,12 @@
             &>li{
                 position: relative;
                 width: 224px;
-                height: 662px;
+                height: 730px;
                 @media screen and (min-width: 992px){
                     width: 303px;
-                    height: 696px;
+                }
+                @media screen and (min-width: 1200px){
+                    width: 400px;
                 }
             }
             gap:10px;
@@ -73,45 +78,68 @@
             &>li:nth-child(1){
                 padding-top: 14px;
                 width: 227px;
-                height: 441px;
+                height: 470px;
                 margin-left: 0;
+                &>h3{
+                    @media screen and (min-width: 992px){
+                        margin-top: 35px;    
+                    }
+                }
                 @media screen and (min-width: 992px){
                     width: 303px;
-                    height: 441px;
+                }
+                @media screen and (min-width: 1200px){
+                    width: 350px;
+
                 }
             }
             &>li:nth-child(2){
                 padding-top: 34px;
                 width: 228px;
-                height: 441px;
+                height: 470px;
                 &>h3{
-                    margin-top: 34px;
+                    margin-top: 30px;
+                    @media screen and (min-width: 992px){
+                        margin-top: 58px;    
+                    }
                 }
                 @media screen and (min-width: 992px){
                     width: 303px;
-                    height: 441px;
+                }
+                @media screen and (min-width: 1200px){
+                    width: 350px;
+
                 }
             }
             &>li:nth-child(3){
                 padding: 20px 0 26px 22px;
                 width: 462px;
-                height: 210px;
+                height: 248px;
                 position: relative;
                 &>p{
                     margin-top: 5px;
                     width: 331px;
+                    @media screen and (min-width: 1200px){
+                        width: 450px;
+                    }
                 }
                 @media screen and (min-width: 992px){
                     width: 616px;
-                    height: 241px;
                     &>h3{
                         margin-top: 34px;
                     }
+                }
+                @media screen and (min-width: 1200px){
+                    width: 720px;
                 }
             }
         }
         @media screen and (min-width: 992px){
             gap: 13px;
+        }
+        @media screen and (min-width: 1200px){
+            gap: 20px;
+            width: 720px;
         }
     }
     &__item{
@@ -132,6 +160,8 @@
         }
     }
     &__img--speak{
+        display: block;
+        margin: 0 auto;
         width: 213px;
         height: 213px;
         @media screen and (min-width:575px){
@@ -148,6 +178,8 @@
         }
     }
     &__img--write{
+        display: block;
+        margin: 0 auto;
         width: 204px;
         height: 204px;
         @media screen and (min-width:575px){
@@ -164,6 +196,8 @@
         }
     }
     &__img--read{
+        display: block;
+        margin: 0 auto;
         width: 236px;
         height: 157px;
         @media screen and (min-width:575px){
@@ -180,6 +214,8 @@
         }
     }
     &__img--listen{
+        display: block;
+        margin: 0 auto;
         width: 232px;
         height: 154px;
         @media screen and (min-width:575px){
@@ -238,6 +274,11 @@
         }
         @media screen and (min-width:767px){
             font-size: 16px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 250px;
+            height: 60px;
+            left: 40px;
         }
     }
 }

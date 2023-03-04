@@ -48,6 +48,10 @@
             width: 312px;
             height: 281px;
         }
+        @media screen and (min-width: 1200px){
+            width: 400px;
+            height: 360px;
+        }
     }
     &__text{
         margin-top: 38px;
@@ -64,6 +68,9 @@
         }
         @media screen and (min-width: 992px){
             width: 530px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 720px;    
         }
     }
     &__form{
@@ -82,6 +89,9 @@
         @media screen and (min-width: 992px){
             width: 530px;
             margin-top: 34px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 720px;    
         }
     }
     &__input{
@@ -106,6 +116,9 @@
             width: 323px;
             height: 60px;
             border-radius: 10px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 450px;
         }
     }
     &__but{
@@ -132,6 +145,9 @@
             width: 193px;
             height: 60px;
             border-radius: 10px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 250px;
         }
     }
 }
