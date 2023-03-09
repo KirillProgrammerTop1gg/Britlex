@@ -48,7 +48,7 @@
         <button class="header-section__but" data-open-modal>
             Let’s Talk
         </button>
-        <img src="./imgs/menu.png" alt="menu icon" class="header-section__img">
+        <img src="./imgs/menu.png" alt="menu icon" class="header-section__img" data-open-Menu>
     </header>
     <main class="main-section">
         <section class="hero-section" id="home">
@@ -249,6 +249,48 @@
                 <button class="talk-section__send" type="submit">Submit</button>
             </form>
         </div>
+        <div class="header-menu is-hidden" data-backdropMenu>
+            <div class="header-menu__container">
+                <button class="header-menu__close" type="button" data-close-Menu>
+                    <svg class="header-menu__icon" width="40" height="40">
+                        <use href="./imgs/svgs.svg#icon-Close"></use>
+                    </svg>
+                </button>
+                <h1 class="logo">
+                    Brit<span class="logo__span">lex</span>
+                </h1>
+                <ul class="header-menu__list">
+                    <li class="header-menu__item">
+                        <a href="#home" class="header-menu__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#skills" class="header-menu__link">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#about" class="header-menu__link">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#pricing" class="header-menu__link">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#contacts" class="header-menu__link">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+                <button class="header-menu__but" data-open-modal>
+                    Let’s Talk
+                </button>
+            </div>
+        </div>
     </main>
     <footer class="footer-section">
         <h1 class="logo logo--footer">
@@ -285,6 +327,26 @@
 
         function logBackdropClick() {
             console.log("Це клік в бекдроп");
+        }
+
+        const refsMenu = {
+            openMenuBtn: document.querySelector("[data-open-Menu]"),
+            closeMenuBtn: document.querySelector("[data-close-Menu]"),
+            backdrop: document.querySelector("[data-backdropMenu]"),
+        };
+
+        refsMenu.openMenuBtn.addEventListener("click", toggleMenu);
+        refsMenu.closeMenuBtn.addEventListener("click", toggleMenu);
+
+        function toggleMenu() {
+            refsMenu.backdrop.classList.toggle("is-hidden");
+
+            if (document.body.style.overflow == 'hidden') {
+                document.body.style.overflow = 'visible';
+            }
+            else {
+                document.body.style.overflow = 'hidden';
+            }
         }
     </script>
 </body>
