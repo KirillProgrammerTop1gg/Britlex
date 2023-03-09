@@ -1,0 +1,92 @@
+.talk-section {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+    background-color: $modal-bg;
+    @media screen and (min-width:575px) {
+        width: 510px;
+    }
+    @media screen and (min-width:767px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 500px;
+    }
+    &__title {
+        @include text-style('Poppins', 600, 24px, 3.3, $title-color, center);
+        @media screen and (min-width:575px) {
+            @include text-style('Poppins', 600, 30px, 2.7, $title-color, center);
+        }
+        @media screen and (min-width:767px) {
+            text-align: left;
+        }
+        @media screen and (min-width: 992px) {
+            @include text-style('Poppins', 600, 36px, 2.2, $title-color, center);
+        }
+    }
+    &__close{
+        background: transparent;
+        border: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transition: all 0.5s ease-in;
+            transform: scale(1.2) rotate(720deg);
+        }
+    }
+    &__list{
+        gap: 15px;
+        @include flex(center,center);
+        flex-direction: column;
+    }
+    &__subtitle{
+        @include text-style('Poppins', 400, 18px, 1.5, $subtitle-color, center);
+    }
+    &__field{
+        border: 2px $border-color solid;
+        width: 280px;
+        height: 30px;
+        @media screen and (min-width:575px) {
+            width: 300px;
+        }
+        @media screen and (min-width:767px) {
+            width: 300px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 460px;
+        }
+        padding: 0 5px;
+        @include text-style('Poppins', 400, 18px, 1.5, $date-color, left);
+    }
+    &__send{
+        border: 0;
+        border-radius: 10px;
+        width: 300px;
+        height: 60px;
+        display: block;
+        margin: 20px auto 0;
+        background-color: $about-color;
+        @include text-style('Poppins', 500, 18px, 1.5, $but-color, center);
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $overlay-background;
+    z-index: 2;
+    transition: all cubic-bezier(.11, .2, .55, 1.27) 0.4s;
+}
+.overlay.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: all cubic-bezier(.11, .2, .55, 1.27) 0.4s;
+}

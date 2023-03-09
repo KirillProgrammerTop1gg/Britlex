@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://kirillprogrammertop1gg.github.io/normalize/index.min.css"/>
+    <link rel="stylesheet" href="https://kirillprogrammertop1gg.github.io/normalize/index.min.css" />
     <link rel="stylesheet" href="./styles/main.min.css">
 </head>
+
 <body>
     <header class="header-section container">
         <h1 class="logo">
@@ -43,7 +45,7 @@
                 </a>
             </li>
         </ul>
-        <button class="header-section__but">
+        <button class="header-section__but" data-open-modal>
             Let’s Talk
         </button>
         <img src="./imgs/menu.png" alt="menu icon" class="header-section__img">
@@ -57,9 +59,10 @@
                         Learn Any Foreign Language
                     </h1>
                     <p class="hero-section__text">
-                        With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.
+                        With our teachers who write a program for each student, you will be able to make your first
+                        sketch after the first lesson.
                     </p>
-                    <button class="hero-section__but">
+                    <button class="hero-section__but" data-open-modal2>
                         Get started
                     </button>
                 </div>
@@ -77,11 +80,13 @@
                             Speaking
                         </h3>
                         <p class="skills-section__text">
-                            Improve your English skills and confidence. Live classes and interactive lessons online. 20% extra free for 
+                            Improve your English skills and confidence. Live classes and interactive lessons online. 20%
+                            extra free for
                             a limited time only
                             <br><br>
-                            Learn English online and improve your 
-                            skills through our high-quality courses and resources – all designed for adult language learners.
+                            Learn English online and improve your
+                            skills through our high-quality courses and resources – all designed for adult language
+                            learners.
                         </p>
                         <button class="skills-section__but">
                             Learn more
@@ -94,10 +99,11 @@
                                 Writing
                             </h3>
                             <p class="skills-section__text">
-                            One of the most important and extensive areas of natural science, the science that studies substances, also their composition 
+                                One of the most important and extensive areas of natural science, the science that
+                                studies substances, also their composition
                             </p>
                             <button class="skills-section__but">
-                            Learn more
+                                Learn more
                             </button>
                         </li>
                         <li class="skills-section__item">
@@ -106,7 +112,8 @@
                                 Reading
                             </h3>
                             <p class="skills-section__text">
-                                perception and response actions of the user resulting from the use and or up coming use of the product, system or service
+                                perception and response actions of the user resulting from the use and or up coming use
+                                of the product, system or service
                             </p>
                             <button class="skills-section__but">
                                 Learn more
@@ -118,7 +125,8 @@
                                 Listening
                             </h3>
                             <p class="skills-section__text">
-                                Here you can find activities to practise your listening skills. Listening will help you to improve your understanding 
+                                Here you can find activities to practise your listening skills. Listening will help you
+                                to improve your understanding
                             </p>
                             <button class="skills-section__but">
                                 Learn more
@@ -135,7 +143,10 @@
                     <use href="./imgs/svgs.svg#icon-about_us"></use>
                 </svg>
                 <img src="./imgs/aboutUs.png" alt="about us" class="aboutUs-section__img">
-                <p class="aboutUs-section__descr">The model offers a framework for discussing problems related to the user's experience, as  well as possible ways and means of solving  them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.</p>
+                <p class="aboutUs-section__descr">The model offers a framework for discussing problems related to the
+                    user's experience, as well as possible ways and means of solving them. Application development
+                    begins at the top level (strategy), where the future software product is described quite abstractly
+                    from the point of view of the expectations of both users and the customer.</p>
                 <ul class="aboutUs-section__list">
                     <li class="aboutUs-section__item">
                         <h3 class="aboutUs-section__num">800</h3>
@@ -153,7 +164,7 @@
             </div>
         </section>
         <section class="pricing-section" id="pricing">
-                <div class="container">
+            <div class="container">
                 <h2 class="pricing-section__title">
                     Pricing
                 </h2>
@@ -164,7 +175,8 @@
                             Self-study online course
                         </h3>
                         <p class="pricing-section__description">
-                            Start learning English online in live classes with qualified EC teachers and students  from all over the world.
+                            Start learning English online in live classes with qualified EC teachers and students from
+                            all over the world.
                         </p>
                         <button class="pricing-section__buy">
                             <p class="pricing-section__price">£5.99</p>
@@ -204,13 +216,39 @@
             <div class="container">
                 <h2 class="contacts-section__title">Contact Us</h2>
                 <img src="./imgs/contacts.png" alt="Contacts" class="contacts-section__img">
-                <p class="contacts-section__text">Discover your current English level by  taking our free online English test. Sign up to our newsletter for learning tips and free resource</p>
+                <p class="contacts-section__text">Discover your current English level by taking our free online English
+                    test. Sign up to our newsletter for learning tips and free resource</p>
                 <form class="contacts-section__form">
                     <input type="text" class="contacts-section__input" placeholder="Enter Your E-mail">
                     <button class="contacts-section__but" type="button">Subscribe</button>
                 </form>
             </div>
         </section>
+        <div class="overlay is-hidden" data-backdrop>
+            <form class="talk-section is-hidden">
+                <h2 class="talk-section__title">Let's talk</h2>
+                <button class="talk-section__close" type="button" data-close-modal>
+                    <svg class="talk-section__icon" width="11" height="11">
+                        <use href="./imgs/svgs.svg#icon-Vector"></use>
+                    </svg>
+                </button>
+                <ul class="talk-section__list">
+                    <li class="talk-section__item">
+                        <label for="name" class="talk-section__subtitle">Full name: </label>
+                        <input type="text" class="talk-section__field" required id="name">
+                    </li>
+                    <li class="talk-section__item">
+                        <label for="tel" class="talk-section__subtitle">Telephone: </label>
+                        <input type="tel" class="talk-section__field" required id="tel">
+                    </li>
+                    <li class="talk-section__item">
+                        <label for="mail" class="talk-section__subtitle">Email: </label>
+                        <input type="email" class="talk-section__field" required id="mail">
+                    </li>
+                </ul>
+                <button class="talk-section__send" type="submit">Submit</button>
+            </form>
+        </div>
     </main>
     <footer class="footer-section">
         <h1 class="logo logo--footer">
@@ -220,5 +258,35 @@
             Terms and Conditions • Privacy Policy • Cookie Policy
         </p>
     </footer>
+    <script>
+        const refs = {
+            openModalBtn: document.querySelector("[data-open-modal]"),
+            openModalBtn2: document.querySelector("[data-open-modal2]"),
+            closeModalBtn: document.querySelector("[data-close-modal]"),
+            backdrop: document.querySelector("[data-backdrop]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.openModalBtn2.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        refs.backdrop.addEventListener("click", logBackdropClick);
+
+        function toggleModal() {
+            refs.backdrop.classList.toggle("is-hidden");
+
+            if (document.body.style.overflow == 'hidden') {
+                document.body.style.overflow = 'visible';
+            }
+            else {
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function logBackdropClick() {
+            console.log("Це клік в бекдроп");
+        }
+    </script>
 </body>
+
 </html>
