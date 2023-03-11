@@ -318,12 +318,13 @@
 
         function toggleModal() {
             refs.backdrop.classList.toggle("is-hidden");
-
-            if (document.body.style.overflow == 'hidden') {
-                document.body.style.overflow = 'visible';
-            }
-            else {
-                document.body.style.overflow = 'hidden';
+            if (document.getElementsByClassName("header-menu")[0].classList.contains('is-hidden')) {
+                if (document.body.style.overflow == 'hidden') {
+                    document.body.style.overflow = 'visible';
+                }
+                else {
+                    document.body.style.overflow = 'hidden';
+                }
             }
         }
 
